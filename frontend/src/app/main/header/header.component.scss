@@ -1,165 +1,77 @@
-.nav-top {
-  height: 60px;
-  background-color: #ffffff;
-  border-top:0.5px solid #dbdbdb;
-  border-bottom:1px solid #dbdbdb;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  position: sticky;
+  top: 0px;
 }
 
-.nav-container {
-  padding-left: 25% !important;
-  padding-right: 25% !important;
-}
-
-@media screen and (max-width: 1605px) {
-  .nav-container {
-      padding-left: 20% !important;
-      padding-right: 20% !important;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .nav-container {
-      padding-left: 5% !important;
-      padding-right: 5% !important;
-  }
-}
-
-.img-nav {
-  border-radius: 100%;
-  -o-border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  max-width:30px;
-  max-height:25px;
-}
-
-.img-profile {
-  border-radius: 100%;
-  -o-border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  max-width:200px;
-  max-height:150px;
-}
-
-.username {
-  font-weight: 300; font-size: 28px;
-}
-
-.name {
-  font-size: 16px; display: inline; font-weight: 600 !important;
-}
-
-.profile-datas {
-  font-size: 16px;
-}
-
-.profile-desc {
-  font-size: 16px;
-}
-
-.nav-feed {
-  border-bottom: none !important;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 15px;
-}
-
-.nav-link-1 {
-  color: #495057;
-  background-color: #fafafa !important;
-  border-color: gray #fff #fff !important;
-  border-top-right-radius: .0rem !important;
-  border-top-left-radius: .0rem !important;
-  font-size: 12px;
-  font-weight: 600;
-}
-
-.nav-link-2 {
-  color: #a2a8af;
-  background-color: #fafafa !important;
-  border-color: #fff #fff #fff !important;
-  border-top-right-radius: .0rem !important;
-  border-top-left-radius: .0rem !important;
-  font-size: 12px;
-  font-weight: 600;
-}
-
-
-.card {
-  border: 0px solid rgba(0,0,0,.125) !important;
-  border-radius: .0rem !important;
-}
-
-.card .card-img, .card-img-top {
-  border-top-left-radius: 0rem !important;
-  border-top-right-radius: 0rem !important;
-}
-
-.stories{
-  text-align: center;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.form-control {
-  border-radius: .15rem !important;
-  padding: 0% !important;
-  background-color: #fafafa !important;
-  text-align: center;
-  font-size: 15px !important;
-}
-
-.button-edit {
-  color: black !important;
-  font-size: 14px !important;
-  font-weight: 600 !important;
-  border-color: #dae1e7 !important;
-}
-
-.btn {
-  padding: .100rem .50rem !important;
-}
-
-
-
-.search-box{
-  border-radius: 8px;
-  background-color: #efefef;
-  align-items: center;
+header {
   display: flex;
-  flex: 0 1 auto;
-  flex-direction: column;
-  height: 36px;
-  min-width: 125px;
-  position: relative;
-  padding: 5px;
-  border: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 18%;
+  border-bottom: 1px solid rgba(219,219,219,1);
+  background-color: white;
+
 }
 
-.nav {
-  &-avatar {
-    border-radius: 100%;
-    -o-border-radius: 100%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    max-width:40px;
-    max-height:30px;
-
-  }
-
-  &-items{
-    align-items: stretch;
-    box-sizing: border-box;
-    flex-direction: row;
-    flex-shrink: 0;
-    position: relative;
-    vertical-align: baseline;
-  }
-
-  &-icons {
-    padding: 4%;
-    font-size: 25px;
-  }
+header .logo {
+  height: 29px;
 }
+
+header .logo img {
+  max-width: 100px;
+  height: 100%;
+  object-fit: contain;
+}
+
+header .search-box {
+  width: 250px;
+  background-color: #efefef;
+  padding: 3px 16px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+
+header .search-box .search-icon {
+  color: #8e8e8e;
+}
+
+header .search-box input {
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: #efefef;
+  padding-left: 10px;
+  font-size: 15px;
+  color: #8e8e8e;
+}
+
+header nav ul{
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav ul li:last-child {
+  margin-right: 0;
+}
+
+header nav ul li .profile-avatar {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.icons {
+  font-size: 22px;
+  color: rgba(38, 38, 38, 1);
+}
+

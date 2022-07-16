@@ -1,8 +1,5 @@
 package org.acme.model;
 
-import java.time.LocalDate;
-import java.util.Date;
-
 import io.quarkus.mongodb.panache.PanacheMongoEntity;
 
 public class Post extends PanacheMongoEntity {

@@ -1,9 +1,107 @@
-<div class="back-color-second">
-  <div class="container">
+<section>
+  <!--<div class="posts">
+    <div class="post-title">
+      <div class="post-left">
+        <div class="image">
+          <img class="user-image" src="assets\img\ff.png" alt="post-user-image">
+        </div>
+        <div class="details">
+          <p class="name">rafael_cardoso22</p>
+          <p class="location">Recife - Pe</p>
+        </div>
+      </div>
+      <div class="post-right">
+        <i class="fas fa-ellipsis-h"></i>
+      </div>
+    </div>
+    <div class="post-content">
+      <img class="post-content-image" src="assets\img\alagamentoRecife.png" alt="post-content-image">
+    </div>
+    <div class="post-footer">
+      <div class="like-share-comment">
+        <i class="far fa-heart icons"></i>
+        <i class="far fa-comment icons"></i>
+        <i class="far fa-paper-plane icons"></i>
+      </div>
+      <div class="save">
+        <i class="far fa-bookmark icons"></i>
+      </div>
+    </div>
+
+    <div class="post-footer-content">
+      <p class="likes">100 curtidas</p>
+      <p class="name">rafael_cardoso22 <span>Alagamento em Recife!!</span></p>
+      <p class="comments">Ver todos os 15 comentários</p>
+      <p class="posting-time">HÁ 5 HORAS</p>
+    </div>
+
+    <div class="add-comment">
+      <div class="left-side">
+        <i class="far fa-smile-beam icons"></i>
+        <input type="text" placeholder="Adicione um comentário...">
+      </div>
+      <div class="right-side">
+        <p class="publish">Publicar</p>
+      </div>
+    </div>
+  </div> -->
+  <div class="row" *ngFor="let post of posts;">
+    <div class="posts">
+      <div class="post-title">
+        <div class="post-left">
+          <div class="image">
+            <img class="user-image" src="assets\img\ff.png" alt="post-user-image">
+          </div>
+          <div class="details">
+            <p class="name">rafael_cardoso22</p>
+            <p class="location">Recife - Pe</p>
+          </div>
+        </div>
+        <div class="post-right">
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+      </div>
+      <div class="post-content">
+        <img class="post-content-image" src="assets\img\alagamentoRecife.png" alt="post-content-image">
+      </div>
+      <div class="post-footer">
+        <div class="like-share-comment">
+          <i class="far fa-heart icons"></i>
+          <i class="far fa-comment icons"></i>
+          <i class="far fa-paper-plane icons"></i>
+        </div>
+        <div class="save">
+          <i class="far fa-bookmark icons"></i>
+        </div>
+      </div>
+
+      <div class="post-footer-content">
+        <p class="likes">100 curtidas</p>
+        <p class="title">{{ post.title }}</p>
+        <p class="description">{{ post.description }}</p>
+        <p class="comments">Ver todos os 15 comentários</p>
+        <p class="posting-time">{{ post.date }}</p>
+      </div>
+
+      <div class="add-comment">
+        <div class="left-side">
+          <i class="far fa-smile-beam icons"></i>
+          <input type="text" placeholder="Adicione um comentário...">
+        </div>
+        <div class="right-side">
+          <p class="publish">Publicar</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div class="container">
     <div class="row" *ngFor="let post of posts;">
         <div class="col-2">Id: {{ post.id }}</div>
         <div class="col-4">Title: {{ post.title }}</div>
         <div class="col-6">Description: {{ post.description }}</div>
     </div>
-  </div>
-</div>
+  </div> -->
+
+</section>

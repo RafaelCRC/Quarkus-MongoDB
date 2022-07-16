@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  background-color: #fafafa;
+}
+
+section {
+  padding: 0 28%;
+  display: flex;
+}
+
+.left-side {
+  width: 65%;
+}
+
+.right-side {
+  width: 35%;
+}

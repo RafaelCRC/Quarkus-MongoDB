@@ -2,19 +2,22 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PostModule } from './post/post.module';
 import { HeaderComponent } from './header/header.component';
+import { MainComponent } from './main/main.component';
 
 
 
 @NgModule({
   declarations: [
-    HeaderComponent
+    HeaderComponent,
+    MainComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    PostModule
   ],
   exports: [
     HeaderComponent,
-    PostModule
+    MainComponent
   ]
 })
 export class MainModule { }
